@@ -2,23 +2,245 @@
 <html>
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="./output.css" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" rel="stylesheet" />
+    <title>IN TRUNG NHAT |WEBSITE</title>
 </head>
 
 <body class="w-full bg-white">
     <!-- Header full width -->
-    <header class="w-full bg-[#F5F5F5] shadow-md">
-        <div class="max-w-[1200px] mx-auto px-4 flex items-center justify-between">
-            <!-- logo + menu + contact -->
+    <header class="w-full bg-[#F5F5F5] shadow-md"
+        style="background-image: url('/image/bg-header.png'); background-repeat: no-repeat;">
+        <div class="header-1">
+            <div class="max-w-[1200px] mx-auto px-4 items-center">
+                <!-- PHẦN 1: Logo + Slogan + Hotline (Dòng trên) -->
+                <div class="flex justify-between items-center ">
+                    <!-- Logo + Domain -->
+                    <div class="flex flex-col items-center gap-2 mt-5">
+                        <img src="/image/logo.png" alt="Logo" class="w-30 h-30" />
+                        <div>
+                            <p class="text-sm text-gray-800 font-semibold">intrungnhat.com</p>
+                        </div>
+                    </div>
+                    <!-- Slogan -->
+                    <div class="flex flex-1 flex-col top-0 text-start ml-10">
+                        <h2 class="text-4xl font-bold text-blue-800">IN TRUNG NHẤT</h2>
+                        <p class="text-lg font-semibold text-orange-400">
+                            DỊCH VỤ NHANH KĨ THUẬT SỐ CHẤT LƯỢNG CAO<br> - GIÁ CẢ CẠNH TRANH
+                        </p>
+                    </div>
+                    <!-- Mã giảm giá + Hotline -->
+                    <div class="text-start w-[35%] text-sm space-y-2">
+                        <!-- Mã giảm giá -->
+                        <div
+                            class="inline-block bg-[#F6821F] skew-x-[-15deg] shadow-md hover:brightness-110 transition">
+                            <p class="text-white px-4 py-2 font-medium inline-block underline skew-x-[15deg]">
+                                Nhập mã để được giảm 5 - 10%
+                            </p>
+                        </div>
+
+                        <!-- Giao hàng + Hotline -->
+                        <div class="flex justify-start items-start gap-20 text-gray-700 leading-relaxed">
+
+                            <!-- Giao hàng -->
+                            <div class="flex items-center gap-2">
+                                <img src="/image/ship.png" alt="ship" class="w-10 h-10 object-contain" />
+                                <p class="text-start font-bold">Giao hàng<br> nhanh chóng</p>
+                            </div>
+
+                            <!-- Hotline -->
+                            <div class="flex items-center gap-2">
+                                <img src="/image/hotline.png" alt="hotline" class="w-10 h-10 object-contain" />
+                                <p class="text-start font-medium">Hotline:<br> <span
+                                        class="text-red-600 font-semibold text-lg">096.6500.556</span> </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- PHẦN 2: Liên hệ (Mail, Zalo, Phone) -->
+                <div class="flex justify-center items-center gap-8 -mt-3 text-sm font-medium text-gray-700 mb-2 ">
+                    <p class="text-base">Liên hệ đặt hàng</p>
+                    <div class="flex items-center gap-2 text-base">
+                        <img src="/image/mail.png" alt="">
+                        <p class="font-semibold ">intruongnhat@gmail.com</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-base">
+                        <img src="image/zalo.png" alt="">
+                        <p>0369 044 850 (Zalo)</p>
+                    </div>
+                    <div class="flex items-center gap-2 text-base">
+                        <img src="image/phone.png" alt="">
+                        <p>0369 044 850</p>
+                    </div>
+                </div>
+            </div>
         </div>
+
+        <div class="header-2 w-full bg-[#262B91]">
+            <div class="max-w-[1200px] mx-auto flex items-center justify-between gap-4 px-4 py-2">
+                <!-- Search box -->
+                <div class="relative w-[400px]">
+                    <input type="text" placeholder="Bạn cần tìm gì?"
+                        class="w-full py-2 pl-4 pr-12 rounded shadow-sm text-sm focus:outline-none" />
+                    <button class="absolute right-0 top-0 h-full px-4 bg-[#F6821F] text-white rounded-r">
+                        <i class="fa-solid fa-magnifying-glass"></i>
+                    </button>
+                </div>
+                <!-- Menu category -->
+                <nav class="flex-1">
+                    <ul class="flex justify-start pl-5 flex-wrap gap-6 text-white text-sm
+                    font-medium">
+                        <li><a href="#">Ấn Phẩm Văn Phòng</a></li>
+                        <li><a href="#">Ấn Phẩm Tài Liệu</a></li>
+                        <li><a href="#">In Màu Khổ Lớn</a></li>
+                        <li><a href="#">In Offset</a></li>
+                        <li><a href="#">Sản Phẩm</a></li>
+                        <li><a href="#">Tin Tức</a></li>
+                        <li><a href="#">Liên Hệ</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </div>
+
     </header>
 
     <!-- Nội dung chính -->
     <main class="w-full">
         <div class="max-w-[1200px] mx-auto px-4">
-            <!-- 9 phần bạn nói: banner, danh mục, sản phẩm,... -->
+            <!-- 1. Banner -->
+            <section class="flex gap-2 my-3 max-w-[1200px] mx-auto ">
+                <!-- Sidebar DANH MỤC SẢN PHẨM -->
+                <div class="w-1/5 text-white overflow-hidden border">
+                    <!-- Header -->
+                    <div class="flex items-center px-4 py-3 bg-[#F6821F]">
+                        <img src="/image/menu.png" alt="menu" class="h-4 w-5 mr-2" />
+                        <h2 class="text-[15px] font-medium uppercase">Danh Mục Sản Phẩm</h2>
+                    </div>
+                    <!-- Links -->
+                    <ul class="divide-y divide-gray-200">
+                        <li class="flex justify-between items-center px-5 py-3 hover:bg-gray-200 cursor-pointer">
+                            <span class="text-black font-normal">In ấn Văn Phòng</span>
+                            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                        </li>
+                        <li class="flex justify-between items-center px-5 py-3 hover:bg-gray-200 cursor-pointer">
+                            <span class="text-black font-normal">Sổ Sách</span>
+                            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                        </li>
+                        <li class="flex justify-between items-center px-5 py-3 hover:bg-gray-200 cursor-pointer">
+                            <span class="text-black font-normal">Catalogue</span>
+                            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                        </li>
+                        <li class="flex justify-between items-center px-5 py-3 hover:bg-gray-200 cursor-pointer">
+                            <span class="text-black font-normal">Quảng Cáo</span>
+                            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                        </li>
+                        <li class="flex justify-between items-center px-5 py-3 hover:bg-gray-200 cursor-pointer">
+                            <span class="text-black font-normal">Sản Phẩm</span>
+                            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                        </li>
+                        <li class="flex justify-between items-center px-5 py-3 hover:bg-gray-200 cursor-pointer">
+                            <span class="text-black font-normal">Bìa Đựng Hồ Sơ</span>
+                            <i class="fa-solid fa-arrow-right text-gray-400"></i>
+                        </li>
+
+                    </ul>
+                </div>
+                <!-- Banner chính -->
+                <div class="w-4/5 relative overflow-hidden">
+                    <!-- Hình nền -->
+                    <img src="/image/banner.png" alt="banner" class="object-cover w-full h-full" />
+                    <!-- Nội dung text + hình -->
+                    <div class="absolute inset-0 flex items-center justify-between px-8">
+
+                        <!-- Text content -->
+                        <div class="text-white max-w-md space-y-4 ">
+                            <p class="text-white font-bold px-4 py-2 w-full text-lg uppercase"
+                                style="background: linear-gradient(to right, #fb7e11, rgba(0,0,0,0) 90%);">
+                                In ấn Trung Nhất
+                            </p>
+
+                            <h1 class="text-5xl font-bold leading-tight">
+                                In nhanh lấy ngay<br />
+                                Chất lượng số 1
+                            </h1>
+                            <div class="flex items-center gap-6 text-sm">
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-envelope"></i>
+                                    <span>innhanhtrungnhat@gmail.com</span>
+                                </div>
+                                <div class="flex items-center gap-2">
+                                    <i class="fa-solid fa-phone"></i>
+                                    <span>096.6500.556</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Ảnh sản phẩm -->
+                        <div class="flex gap-4">
+                            <img src="/image/prod1.png" alt="" class="h-32 object-contain" />
+                            <img src="/image/prod2.png" alt="" class="h-32 object-contain" />
+                            <img src="/image/prod3.png" alt="" class="h-32 object-contain" />
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <!-- 2. Danh mục  -->
+            <section class="product-categories">
+                <h2 class="text-xl font-bold mb-4">Danh Mục Ấn Phẩm</h2>
+                <!-- Danh mục -->
+            </section>
+
+            <!-- 3. Khuyến mãi -->
+            <section class="promotions">
+                <h2 class="text-xl font-bold mb-4">Khuyến Mãi</h2>
+                <!-- Danh sách khuyến mãi -->
+            </section>
+
+            <!-- 4. Sản phẩm phổ biến -->
+            <section class="popular-products">
+                <h2 class="text-xl font-bold mb-4">Sản Phẩm Phổ Biến</h2>
+                <!-- Danh sách -->
+            </section>
+
+            <!-- 5. Dịch vụ in nhanh -->
+            <section class="fast-print-services">
+                <h2 class="text-xl font-bold mb-4">Dịch Vụ In Nhanh</h2>
+                <!-- Nội dung -->
+            </section>
+
+            <!-- 6. In Offset -->
+            <section class="offset-printing">
+                <h2 class="text-xl font-bold mb-4">In Offset</h2>
+                <!-- Nội dung -->
+            </section>
+
+            <!-- 7. Vì sao chọn Trung Nhật -->
+            <section class="why-choose-us">
+                <h2 class="text-xl font-bold mb-4">Vì Sao Chọn Trung Nhật</h2>
+                <!-- Ưu điểm -->
+            </section>
+
+            <!-- 8. Video Clip -->
+            <section class="video-clip">
+                <h2 class="text-xl font-bold mb-4">Video Clip</h2>
+                <!-- Danh sách video -->
+            </section>
+
+            <!-- 9. Tin tức & sự kiện -->
+            <section class="news-events">
+                <h2 class="text-xl font-bold mb-4">Tin Tức & Sự Kiện</h2>
+                <!-- Danh sách bài viết -->
+            </section>
+
         </div>
     </main>
 
