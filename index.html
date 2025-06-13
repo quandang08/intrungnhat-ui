@@ -15,11 +15,11 @@
 </head>
 
 <body class="w-full bg-white">
-    <!-- Header full width -->
+    <!-- Header -->
     <header class="w-full bg-[#F5F5F5] shadow-md"
         style="background-image: url('/image/bg-header.png'); background-repeat: no-repeat;">
         <div class="header-1">
-            <div class="max-w-[1200px] mx-auto px-4 items-center">
+            <div class="max-w-[1200px] mx-auto items-center">
                 <!-- PHẦN 1: Logo + Slogan + Hotline (Dòng trên) -->
                 <div class="flex justify-between items-center ">
                     <!-- Logo + Domain -->
@@ -31,8 +31,8 @@
                     </div>
                     <!-- Slogan -->
                     <div class="flex flex-1 flex-col top-0 text-start ml-10">
-                        <h2 class="text-4xl font-bold text-blue-800">IN TRUNG NHẤT</h2>
-                        <p class="text-lg font-semibold text-orange-400">
+                        <h2 class="text-4xl font-bold text-blue-800 ">IN TRUNG NHẤT</h2>
+                        <p class="text-lg font-bold text-orange-400">
                             DỊCH VỤ NHANH KĨ THUẬT SỐ CHẤT LƯỢNG CAO<br> - GIÁ CẢ CẠNH TRANH
                         </p>
                     </div>
@@ -40,8 +40,8 @@
                     <div class="text-start w-[35%] text-sm space-y-2">
                         <!-- Mã giảm giá -->
                         <div
-                            class="inline-block bg-[#F6821F] skew-x-[-15deg] shadow-md hover:brightness-110 transition">
-                            <p class="text-white px-4 py-2 font-medium inline-block underline skew-x-[15deg]">
+                            class="inline-block bg-[#F6821F] skew-x-[-15deg] shadow-md hover:brightness-110 transition rounded-lg overflow-hidden">
+                            <p class="text-white py-2 px-4 font-medium inline-block underline skew-x-[15deg]">
                                 Nhập mã để được giảm 5 - 10%
                             </p>
                         </div>
@@ -65,7 +65,7 @@
                     </div>
                 </div>
                 <!-- PHẦN 2: Liên hệ (Mail, Zalo, Phone) -->
-                <div class="flex justify-center items-center gap-8 -mt-3 text-sm font-medium text-gray-700 mb-2 ">
+                <div class="flex justify-center items-center gap-8 -ml-7 -mt-3 text-sm font-medium text-gray-700 mb-2 ">
                     <p class="text-base">Liên hệ đặt hàng</p>
                     <div class="flex items-center gap-2 text-base">
                         <img src="/image/mail.png" alt="">
@@ -84,7 +84,7 @@
         </div>
 
         <div class="header-2 w-full bg-[#262B91]">
-            <div class="max-w-[1200px] mx-auto flex items-center justify-between gap-4 px-4 py-2">
+            <div class="max-w-[1200px] mx-auto flex items-center justify-between gap-4 py-2">
                 <!-- Search box -->
                 <div class="relative w-[400px]">
                     <input type="text" placeholder="Bạn cần tìm gì?"
@@ -113,9 +113,9 @@
 
     <!-- Nội dung chính -->
     <main class="w-full">
-        <div class="max-w-[1200px] mx-auto px-4">
+        <div class="max-w-[1200px] mx-auto ">
             <!-- 1. Banner -->
-            <section class="flex gap-2 my-3 max-w-[1200px] mx-auto ">
+            <section class="flex gap-2 my-3 max-w-[1200px] mx-auto pb-5">
                 <!-- Sidebar DANH MỤC SẢN PHẨM -->
                 <div class="w-1/5 text-white overflow-hidden border">
                     <!-- Header -->
@@ -153,7 +153,7 @@
                     </ul>
                 </div>
                 <!-- Banner chính -->
-                <div class="w-4/5 relative overflow-hidden">
+                <div class="w-5/5 relative overflow-hidden">
                     <!-- Hình nền -->
                     <img src="/image/banner.png" alt="banner" class="object-cover w-full h-full" />
                     <!-- Nội dung text + hình -->
@@ -194,63 +194,703 @@
             </section>
 
             <!-- 2. Danh mục  -->
-            <section class="product-categories">
-                <h2 class="text-xl font-bold mb-4">Danh Mục Ấn Phẩm</h2>
-                <!-- Danh mục -->
+            <section class="my-10 max-w-[1200px] mx-auto">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-6">Danh Mục Ấn Phẩm</h2>
+
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-10 gap-6">
+                    <!-- Item -->
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-1.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-2.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-3.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-4.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-5.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-6.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-7.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-8.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-9.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-10.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <!-- Item -->
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-1.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-2.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-3.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-4.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-5.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-6.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-7.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-8.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-9.png" alt="Bìa Đựng Hồ Sơ" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Bìa Đựng Hồ Sơ</p>
+                    </div>
+                    <div class="flex flex-col items-center text-center">
+                        <div
+                            class="w-24 h-24 bg-white rounded-full shadow flex items-center justify-center overflow-hidden">
+                            <img src="/image/cate-10.png" alt="Danh Thiếp" class="object-contain w-[80%] h-[80%]" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">Danh Thiếp</p>
+                    </div>
+                </div>
             </section>
 
             <!-- 3. Khuyến mãi -->
-            <section class="promotions">
-                <h2 class="text-xl font-bold mb-4">Khuyến Mãi</h2>
-                <!-- Danh sách khuyến mãi -->
+            <section class="my-10 max-w-[1200px] mx-auto">
+                <h2 class="text-2xl font-bold text-indigo-800 mb-6">Khuyến Mãi</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <!-- Product Card -->
+                    <div class="text-center">
+                        <div class="w-full aspect-[6/6] overflow-hidden rounded-xl shadow">
+                            <img src="/image/sale-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/sale-2.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/sale-3.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/sale-4.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/sale-5.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                </div>
             </section>
-
-            <!-- 4. Sản phẩm phổ biến -->
-            <section class="popular-products">
-                <h2 class="text-xl font-bold mb-4">Sản Phẩm Phổ Biến</h2>
-                <!-- Danh sách -->
+        </div>
+        <!-- 4. Sản phẩm phổ biến -->
+        <div class="popular-layout w-full bg-[#F7F7F7] h-[450px] flex items-center justify-center">
+            <section class="relative max-w-[1200px] w-full">
+                <!-- Nút trái -->
+                <img src="/image/left.png" alt="left"
+                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
+                <h2 class="text-2xl font-bold text-indigo-800 mb-6">Ấn Phẩm Phổ Biến</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <!-- Product Card -->
+                    <div class="text-center">
+                        <div class="w-full aspect-[6/6] overflow-hidden rounded-xl shadow">
+                            <img src="/image/popular-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/popular-2.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/popular-3.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/popular-4.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/popular-5.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                </div>
+                <!-- Nút phải -->
+                <img src="/image/right.png" alt="right"
+                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
             </section>
-
+        </div>
+        <div class="max-w-[1200px] mx-auto ">
             <!-- 5. Dịch vụ in nhanh -->
-            <section class="fast-print-services">
-                <h2 class="text-xl font-bold mb-4">Dịch Vụ In Nhanh</h2>
-                <!-- Nội dung -->
+            <section class="relative max-w-[1200px] py-10">
+                <!-- Nút trái -->
+                <img src="/image/left.png" alt="left"
+                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
+                <h2 class="text-2xl font-bold text-indigo-800 mb-6">Dịch Vụ In Nhanh</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <!-- Product Card -->
+                    <div class="text-center">
+                        <div class="w-full aspect-[6/6] overflow-hidden rounded-xl shadow">
+                            <img src="/image/service-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/service-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/service-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/service-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/service-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                </div>
+                <!-- Nút phải -->
+                <img src="/image/right.png" alt="right"
+                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
             </section>
-
-            <!-- 6. In Offset -->
-            <section class="offset-printing">
-                <h2 class="text-xl font-bold mb-4">In Offset</h2>
-                <!-- Nội dung -->
+        </div>
+        <!-- 6. In Offset -->
+        <div class="popular-layout w-full bg-[#F7F7F7] h-[450px] flex items-center justify-center">
+            <section class="relative max-w-[1200px] w-full">
+                <!-- Nút trái -->
+                <img src="/image/left.png" alt="left"
+                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
+                <h2 class="text-2xl font-bold text-indigo-800 mb-6">In Offset</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <!-- Product Card -->
+                    <div class="text-center">
+                        <div class="w-full aspect-[6/6] overflow-hidden rounded-xl shadow">
+                            <img src="/image/Offset-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/Offset-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/Offset-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/Offset-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/Offset-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                </div>
+                <!-- Nút phải -->
+                <img src="/image/right.png" alt="right"
+                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
             </section>
-
+        </div>
+        <div class="max-w-[1200px] mx-auto ">
             <!-- 7. Vì sao chọn Trung Nhật -->
-            <section class="why-choose-us">
-                <h2 class="text-xl font-bold mb-4">Vì Sao Chọn Trung Nhật</h2>
-                <!-- Ưu điểm -->
-            </section>
+            <section class="py-12 bg-white text-gray-800">
+                <div class="max-w-6xl mx-auto">
+                    <h2 class="text-3xl font-bold text-center mb-2">
+                        <span class="text-gray-800">VÌ SAO CHỌN </span><span class="text-indigo-600">TRUNG NHẤT</span>
+                    </h2>
+                    <p class="text-center text-gray-500 mb-10">Chúng tôi luôn sẵn sàng lắng nghe, trợ giúp khách hàng
+                        bất cứ vấn đề nào bạn cần</p>
 
-            <!-- 8. Video Clip -->
-            <section class="video-clip">
-                <h2 class="text-xl font-bold mb-4">Video Clip</h2>
-                <!-- Danh sách video -->
-            </section>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-3 gap-8">
+                        <!-- Item -->
+                        <div class="flex items-start gap-4">
+                            <img src="/image/intro-1.png" alt="" class="w-12 h-12" />
+                            <div>
+                                <h3 class="text-lg font-semibold">Trả Lời Đơn Hàng Nhanh</h3>
+                                <p class="text-sm text-gray-600">Trả lời nhanh nhất để đáp ứng đơn hàng tốt nhất</p>
+                            </div>
+                        </div>
 
-            <!-- 9. Tin tức & sự kiện -->
-            <section class="news-events">
-                <h2 class="text-xl font-bold mb-4">Tin Tức & Sự Kiện</h2>
-                <!-- Danh sách bài viết -->
-            </section>
+                        <div class="flex items-start gap-4">
+                            <img src="/image/intro-2.png" alt="" class="w-12 h-12" />
+                            <div>
+                                <h3 class="text-lg font-semibold">Tư Vấn Nhiệt Tình</h3>
+                                <p class="text-sm text-gray-600">Trả lời nhanh nhất để đáp ứng đơn hàng tốt nhất</p>
+                            </div>
+                        </div>
 
+                        <div class="flex items-start gap-4">
+                            <img src="image/intro-3.png" alt="" class="w-12 h-12" />
+                            <div>
+                                <h3 class="text-lg font-semibold">Giá Cả Cạnh Tranh</h3>
+                                <p class="text-sm text-gray-600">Trả lời nhanh nhất để đáp ứng đơn hàng tốt nhất</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <img src="image/intro-4.png" alt="" class="w-12 h-12" />
+                            <div>
+                                <h3 class="text-lg font-semibold">Ký Kết Hợp Đồng</h3>
+                                <p class="text-sm text-gray-600">Trả lời nhanh nhất để đáp ứng đơn hàng tốt nhất</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <img src="image/intro-5.png" alt="" class="w-12 h-12" />
+                            <div>
+                                <h3 class="text-lg font-semibold">Máy Móc Hiện Đại</h3>
+                                <p class="text-sm text-gray-600">Trả lời nhanh nhất để đáp ứng đơn hàng tốt nhất</p>
+                            </div>
+                        </div>
+
+                        <div class="flex items-start gap-4">
+                            <img src="image/intro-6.png" alt="" class="w-12 h-12" />
+                            <div>
+                                <h3 class="text-lg font-semibold">Giao Hàng Nhanh Chóng</h3>
+                                <p class="text-sm text-gray-600">Trả lời nhanh nhất để đáp ứng đơn hàng tốt nhất</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <!-- 8. San pham  -->
+        <div class="popular-layout w-full bg-[#F7F7F7] h-[450px] flex items-center justify-center">
+            <section class="relative max-w-[1200px] w-full">
+                <!-- Nút trái -->
+                <img src="/image/left.png" alt="left"
+                    class="absolute -left-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
+                <h2 class="text-2xl font-bold text-indigo-800 mb-6">Sản phẩm</h2>
+                <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-6">
+                    <!-- Product Card -->
+                    <div class="text-center">
+                        <div class="w-full aspect-[6/6] overflow-hidden rounded-xl shadow">
+                            <img src="/image/product-1.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/product-2.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/product-3.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/product-4.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                    <div class="text-center">
+                        <div class="w-full aspect-[5/5] overflow-hidden rounded-xl shadow">
+                            <img src="/image/product-5.png" alt="In Nhanh..." class="object-cover w-full h-full" />
+                        </div>
+                        <p class="mt-3 text-sm font-medium text-gray-700">In Nhanh Loại Giấy Cao Cấp</p>
+                        <p class="text-sm text-gray-700">
+                            Giá: <span class="text-red-600 font-bold">80.000đ</span>/ Hộp
+                        </p>
+                    </div>
+                </div>
+                <!-- Nút phải -->
+                <img src="/image/right.png" alt="right"
+                    class="absolute -right-5 top-1/2 -translate-y-1/2 z-10 w-10 h-10 cursor-pointer" />
+            </section>
+        </div>
+        <!-- banner 2 -->
+        <div class="banner-2">
+            <img src="image/banner-3.png" alt="">
+        </div>
+
+        <!-- 9. Video Clip -->
+        <div class="max-w-[1200px] mx-auto ">
+            <section class="py-12 bg-white text-gray-800">
+                <div class="max-w-6xl mx-auto ">
+                    <h2 class="text-3xl font-bold text-center mb-2">
+                        <span class="text-indigo-600">VIDEO CLIP</span>
+                    </h2>
+                    <p class="text-center text-gray-500 mb-10">
+                        Chúng tôi luôn sẵn sàng lắng nghe, trợ giúp khách hàng bất cứ vấn đề nào bạn cần
+                    </p>
+
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <!-- Video Item -->
+                        <div class="relative rounded-lg overflow-hidden shadow-md group">
+                            <img src="image/video-1.png" alt="video"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" />
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                <svg class="w-14 h-14 text-white opacity-80 group-hover:opacity-100 transition"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                            <p
+                                class="text-white text-sm font-medium absolute bottom-2 left-2 right-2 bg-black bg-opacity-60 px-2 py-1 rounded">
+                                In kỹ thuật số là gì? Ưu điểm Vai trò trong lĩnh vực in ấn nhanh
+                            </p>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden shadow-md group">
+                            <img src="image/video-2.png" alt="video"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" />
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                <svg class="w-14 h-14 text-white opacity-80 group-hover:opacity-100 transition"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden shadow-md group">
+                            <img src="image/video-3.png" alt="video"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" />
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                <svg class="w-14 h-14 text-white opacity-80 group-hover:opacity-100 transition"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                        <div class="relative rounded-lg overflow-hidden shadow-md group">
+                            <img src="/image/video-4.png" alt="video"
+                                class="w-full h-48 object-cover group-hover:scale-105 transition duration-300" />
+                            <div class="absolute inset-0 bg-black bg-opacity-40 flex items-center justify-center">
+                                <svg class="w-14 h-14 text-white opacity-80 group-hover:opacity-100 transition"
+                                    fill="currentColor" viewBox="0 0 24 24">
+                                    <path d="M8 5v14l11-7z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <!-- 10. Tin tức & sự kiện -->
+        <div class="w-full bg-[#F7F7F7] py-10">
+            <div class="max-w-[1200px] mx-auto ">
+                <section class="news-events">
+                    <h2 class="text-3xl font-bold text-center mb-2">
+                        <span class="text-indigo-600 uppercase">tin tức & sự kiện</span>
+                    </h2>
+                    <p class="text-center text-gray-500 mb-10">
+                        Chúng tôi luôn sẵn sàng lắng nghe, trợ giúp khách hàng bất cứ vấn đề nào bạn cần
+                    </p>
+                    <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        <!-- Card 1 -->
+                        <div class="bg-green-100 p-4 rounded-lg shadow-md">
+                            <img src="image/event-1.png" alt="Product 1" class="w-full h-48 object-cover rounded-md">
+                            <div class="content flex flex-col">
+                                <p class="mt-2 text-start text-gray-800 font-medium">
+                                    Nhãn Lưỡi Quan Trọng Khi Dán In Decal Theo Yêu Cầu
+                                </p>
+                                <p class="mt-2 text-start text-gray-800 font-light">
+                                    Decal theo yêu cầu giúp tạo ra những mẫu decal độc đáo, phù hợp
+                                    với nhu cầu sử dụng trong nhiều lĩnh vực.
+                                </p>
+                            </div>
+
+                        </div>
+                        <!-- Card 2 -->
+                        <div class="bg-pink-100 p-4 rounded-lg shadow-md">
+                            <img src="image/event-2.png" alt="Product 2" class="w-full h-48 object-cover rounded-md">
+                            <div class="content flex flex-col">
+                                <p class="mt-2 text-start text-gray-800 font-medium">
+                                    Nhãn Lưỡi Quan Trọng Khi Dán In Decal Theo Yêu Cầu
+                                </p>
+                                <p class="mt-2 text-start text-gray-800 font-light">
+                                    Decal theo yêu cầu giúp tạo ra những mẫu decal độc đáo, phù hợp
+                                    với nhu cầu sử dụng trong nhiều lĩnh vực.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 3 -->
+                        <div class="bg-green-200 p-4 rounded-lg shadow-md">
+                            <img src="image/event-3.png" alt="Product 3" class="w-full h-48 object-cover rounded-md">
+                            <div class="content flex flex-col">
+                                <p class="mt-2 text-start text-gray-800 font-medium">
+                                    Nhãn Lưỡi Quan Trọng Khi Dán In Decal Theo Yêu Cầu
+                                </p>
+                                <p class="mt-2 text-start text-gray-800 font-light">
+                                    Decal theo yêu cầu giúp tạo ra những mẫu decal độc đáo, phù hợp
+                                    với nhu cầu sử dụng trong nhiều lĩnh vực.
+                                </p>
+                            </div>
+                        </div>
+                        <!-- Card 4 -->
+                        <div class="bg-pink-200 p-4 rounded-lg shadow-md">
+                            <img src="image/event-4.png" alt="Product 4" class="w-full h-48 object-cover rounded-md">
+                            <div class="content flex flex-col">
+                                <p class="mt-2 text-start text-gray-800 font-medium">
+                                    Nhãn Lưỡi Quan Trọng Khi Dán In Decal Theo Yêu Cầu
+                                </p>
+                                <p class="mt-2 text-start text-gray-800 font-light">
+                                    Decal theo yêu cầu giúp tạo ra những mẫu decal độc đáo, phù hợp
+                                    với nhu cầu sử dụng trong nhiều lĩnh vực.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+            </div>
         </div>
     </main>
 
     <!-- Footer full width -->
-    <footer class="w-full bg-gray-100 mt-10">
-        <div class="max-w-[1200px] mx-auto px-4">
-            <!-- Thông tin công ty, chính sách, bản đồ -->
+    <footer class="w-full bg-[#FFFFFF] mt-10">
+        <div class="max-w-[1200px] mx-auto">
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6  pb-10">
+                <div class="col leading-9">
+                    <h1 class="font-bold text-lg text-blue-700 mb-2">CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT TRUNG NHẤT
+                    </h1>
+                    <p>Địa chỉ: 28-30 D. Quốc Hương, Thảo Điền, Thủ Đức, Hồ Chí Minh 71106</p>
+                    <p>Hotline: 096.6500.556</p>
+                    <p>Email: email@trungnhat.com</p>
+                    <p>Website: www.companyname.com</p>
+                    <div class="flex gap-3 mt-4 w-auto">
+                        <img src="image/fb.png" alt="Facebook" class="w-8 h-8">
+                        <img src="image/zalo-1.png" alt="Youtube" class="w-8 h-8">
+                        <img src="image/ytb].png" alt="Instagram" class="w-8 h-8">
+                        <img src="image/intar.png" alt="TikTok" class="w-8 h-8">
+                        <img src="image/tiktok.png" alt="TikTok" class="w-8 h-8">
+                    </div>
+                </div>
+                <div class="col leading-9 mt-10 ml-12">
+                    <h3 class="font-bold mb-2 text-blue-700 ">CHÍNH SÁCH HỖ TRỢ</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Chính sách giao hàng</a></li>
+                        <li><a href="#" class="hover:underline">Chính sách thanh toán</a></li>
+                        <li><a href="#" class="hover:underline">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="hover:underline">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="hover:underline">Kiểm tra đơn hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col leading-9 mt-10 ml-12">
+                    <h3 class="font-bold mb-2 text-blue-700 ">HỖ TRỢ</h3>
+                    <ul>
+                        <li><a href="#" class="hover:underline">Chính sách giao hàng</a></li>
+                        <li><a href="#" class="hover:underline">Chính sách thanh toán</a></li>
+                        <li><a href="#" class="hover:underline">Chính sách bảo hành</a></li>
+                        <li><a href="#" class="hover:underline">Chính sách đổi trả</a></li>
+                        <li><a href="#" class="hover:underline">Kiểm tra đơn hàng</a></li>
+                    </ul>
+                </div>
+                <div class="col mt-10">
+                    <div class="border border-purple-500 p-4 rounded-lg">
+                        <div class="flex items-center mb-2">
+                            <img src="image/fanpage-text.png" alt="Facebook" class="m-auto">
+                        </div>
+                        <img src="image/fanpage.png" alt="Magazine Mockup" class="w-full h-auto rounded">
+                    </div>
+                </div>
+            </div>
+            <div class="map w-auto my-5">
+                <img src="/image/map.png" alt="">
+            </div>
         </div>
+        <p class="bg-blue-700 py-2 text-center text-sm font-normal
+        text-white">Copyright ©CÔNG TY TNHH THƯƠNG MẠI DỊCH VỤ KỸ THUẬT TRUNG NHẤT. Designed by Nina</p>
     </footer>
 </body>
-
 
 </html>
